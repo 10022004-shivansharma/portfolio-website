@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shivan Sharma Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+
+/* ==========================================
+   HERO SECTION & GENERAL STYLES
+   ========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-mf .about-img img:hover {
+  transform: translateY(-5px);
+}
+
+.about-info {
+  list-style: none;
+  padding: 0;
+}
+
+.about-info li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.about-info li:last-child {
+  border-bottom: none;
+}
+
+.about-info span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* ==========================================
+   SKILL SECTION
+   ========================================== */
+
+.skill-mf {
+  margin-top: 2rem;
+}
+
+.skill-mf p.title-s {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.skill-mf span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.skill-mf .progress {
+  margin: 0.8rem 0 1.5rem 0;
+  border-radius: 8px;
+  height: 0.9rem;
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.9rem;
+  background: linear-gradient(90deg, #ffbd39, #ffc554);
+  border-radius: 8px;
+  transition: width 0.6s ease;
+}
+
+/* ==========================================
+   TYPING ANIMATION
+   ========================================== */
+
+#typing-animation {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffbd39;
+  overflow: hidden;
+  white-space: nowrap;
+  min-height: 3rem;
+  display: inline-block;
+}
+
+#typing-animation::after {
+  content: "|";
+  position: absolute;
+  right: -8px;
+  animation: cursor-blink 0.7s infinite;
+  color: #ffbd39;
+  font-weight: 300;
+}
+
+@keyframes cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+/* ==========================================
+   PROJECT CARDS & ZOOM EFFECT
+   ========================================== */
+
+.zoom-effect {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.zoom-effect:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.blog-entry {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-entry:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-entry .text {
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.blog-entry .text h3 {
+  margin-bottom: 0.75rem;
+}
+
+.blog-entry .text a {
+  color: #ffbd39;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.blog-entry .text a:hover {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+/* ==========================================
+   RESUME SECTION
+   ========================================== */
+
+.resume-wrap {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid #ffbd39;
+}
+
+.resume-wrap:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume-wrap .date {
+  display: inline-block;
+  background: #ffbd39;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.resume-wrap h2 {
+  color: #333;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.resume-wrap .position {
+  color: #666;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.resume-wrap ul {
+  margin: 1rem 0 0 1.5rem;
+}
+
+.resume-wrap li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   COUNTERS
+   ========================================== */
+
+.block-18 {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.block-18:hover {
+  transform: translateY(-5px);
+}
+
+.block-18 .number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffbd39;
+  display: block;
+}
+
+.block-18 span {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+
+.contact-info .box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-info .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(59, 78, 163, 0.4);
+}
+
+.contact-info .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffbd39;
+}
+
+.contact-info h3 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-info p a {
+  color: #ffbd39;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-info p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ==========================================
+   UTILITY & HELPER CLASSES
+   ========================================== */
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffbd39, #ff9800);
+  border-radius: 2px;
+  margin: 1rem auto;
+}
+
+.ftco-hireme {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.ftco-hireme::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.ftco-hireme .row {
+  position: relative;
+  z-index: 2;
+}
+
+.heading-section h2 {
+  color: #333;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heading-section p {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+
+@media (max-width: 768px) {
+  #typing-animation {
+    font-size: 1.8rem;
+  }
+  
+  .heading-section h2 {
+    font-size: 2rem;
+  }
+  
+  .resume-wrap {
+    padding: 1.5rem;
+  }
+  
+  .block-18 .number {
+    font-size: 2.2rem;
+  }
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Shivan Sharma</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero" style="background-image: url('images/shivan%20background.png'); background-size: cover; background-position: center; background-repeat: repeat; background-attachment: scroll;">
+		  <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+		  <div class="home-slider owl-carousel" style="position: relative; z-index: 2;">
+	       <div class="slider-item" style="background:transparent;">
+	      	<div class="overlay" style="opacity:0;"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-start" data-scrollax-parent="true" style="padding-bottom: 3rem;">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading" style="color: #ffbd39; font-weight: 600;">Hello!</span>
+			            <h1 class="mb-4 mt-3" style="color: #ffffff; font-weight: 800;">I'm <span style="color: #ffbd39;">Shivan Sharma</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist  ',
+						'Data Analyst  ',
+						'Machine Learning Enthusiast  ',
+						'Business Analyst  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2 style="color: #ffffff; font-weight: 400; font-size: 1.8rem;">A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+				
+						<a href=" https://github.com/10022004-shivansharma" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/aboutme.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Shivan Sharma</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>jammu, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 1 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in computer aplication. 
+									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective resultes.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor in computer application</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="25"></span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/shivan-sharma-a6964121a/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned  Data Analyst with 1+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Present</span>
+						<h2> Data Analyst</h2>
+						<span class="position"><b>K2</b></span>
+						<p class="mt-4">K2, a leading desining and  constration company with over 100= professionals around india. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">02/2025-06/2025</span>
+						<h2> Data Analyst</h2>
+						<span class="position"><b>Chopra </b></span>
+						<p class="mt-4">Chopra is a data-driven digital marketing analytics and solutions company, helps top 100  brands in jammu. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor in coumpter application</h2>
+    					<span class="position">cluster university of jammu</span>
+    					<p class="mt-4">Grade: 7+ cgpa.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-22</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Dalhousie Public School</span>
+    					
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1up-FfiSfw00Tm33xoGmjZjphtNd_UxBU/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <p>Designed a power bi dashboard for cloth Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="25">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong><span> + hr</span>
+                <span>YouTube Learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee and still counting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Jammu,India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91-6005962028</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:sharmashivan64@gmail.com">sharmashivan64@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-left">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p><a href="#" download>Download CV</a></p>
+            </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYIgWpUk1cLEu8F7LlprUQK6feGIb78iXjYa87vfZO0s9x8A/viewform?usp=publish-editor" class="btn btn-primary py-3 px-5">Click Here to Ask</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Get in touch </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/shivan-sharma-a6964121a/"><span class="icon-linkedin"></span></a></li>  
+				      <!-- git hub ki id<li class="ftco-animate"><a href="https://www.linkedin.com/in/shivan-sharma-a6964121a/"><span class="icon-Gamil"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
